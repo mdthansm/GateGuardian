@@ -1,4 +1,4 @@
-import RoleSelection from '../components/RoleSelection';
+import RoleSelection from '../components/maindashboard/RoleSelection';
 
 export default function Home() {
   return <RoleSelection />;

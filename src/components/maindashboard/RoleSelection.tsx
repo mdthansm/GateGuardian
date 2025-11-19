@@ -42,6 +42,8 @@ const RoleSelection: React.FC = () => {
   const handleRoleClick = (role: string) => {
     if (role === 'Guard') {
       router.push('/dashboard');
+    } else if (role === 'Agency Supervisor') {
+      router.push('/agency-supervisor');
     }
     // Add other role routes here as needed
   };

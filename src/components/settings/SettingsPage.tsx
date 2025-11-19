@@ -5,6 +5,11 @@ import { Tabs, TabsList, TabsTrigger, TabsContent } from '../ui/tabs';
 import { Input } from '../ui/input';
 import { CustomSelect } from '../ui/custom-select';
 import { Button } from '../ui/button';
+import ProfileSettings from './ProfileSettings';
+import NotificationsSettings from './NotificationsSettings';
+import SecuritySettings from './SecuritySettings';
+import AppearanceSettings from './AppearanceSettings';
+import SystemSettings from './SystemSettings';
 
 const SettingsPage: React.FC = () => {
   const [applicationName, setApplicationName] = useState('GateGuardian');
@@ -193,31 +198,25 @@ const SettingsPage: React.FC = () => {
           </div>
         </TabsContent>
 
-        {/* Other Tabs - Empty for now */}
+        {/* Profile Tab Content */}
         <TabsContent value="profile" className="mt-0">
-          <div className="bg-white border border-gray-200 rounded-lg shadow-sm p-6">
-            <p className="text-gray-600">Profile settings coming soon...</p>
-          </div>
+          <ProfileSettings />
         </TabsContent>
+        {/* Notifications Tab Content */}
         <TabsContent value="notifications" className="mt-0">
-          <div className="bg-white border border-gray-200 rounded-lg shadow-sm p-6">
-            <p className="text-gray-600">Notification settings coming soon...</p>
-          </div>
+          <NotificationsSettings />
         </TabsContent>
+        {/* Security Tab Content */}
         <TabsContent value="security" className="mt-0">
-          <div className="bg-white border border-gray-200 rounded-lg shadow-sm p-6">
-            <p className="text-gray-600">Security settings coming soon...</p>
-          </div>
+          <SecuritySettings />
         </TabsContent>
+        {/* Appearance Tab Content */}
         <TabsContent value="appearance" className="mt-0">
-          <div className="bg-white border border-gray-200 rounded-lg shadow-sm p-6">
-            <p className="text-gray-600">Appearance settings coming soon...</p>
-          </div>
+          <AppearanceSettings />
         </TabsContent>
+        {/* System Tab Content */}
         <TabsContent value="system" className="mt-0">
-          <div className="bg-white border border-gray-200 rounded-lg shadow-sm p-6">
-            <p className="text-gray-600">System settings coming soon...</p>
-          </div>
+          <SystemSettings />
         </TabsContent>
       </Tabs>
     </div>
