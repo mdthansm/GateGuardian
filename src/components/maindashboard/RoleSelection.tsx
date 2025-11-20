@@ -45,6 +45,9 @@ const RoleSelection: React.FC = () => {
     } else if (role === 'Agency Supervisor') {
       router.push('/agency-supervisor');
     }
+    else if (role === 'Field Supervisor') {
+    router.push('/field-supervisor'); 
+  }
     // Add other role routes here as needed
   };
 
